@@ -7,10 +7,12 @@
 		<a-scene>
 			<a-assets>
 				<img id="devicelab-logo" src="devicelab_logo_stacked.png">
+				<audio id="whiplash" src="whiplash.wav" </audio>
 			</a-assets>
 			<a-sky color="#D3D3D3"></a-sky>
-			<a-box width="4" height="10" depth="2" position="-10 2 -5" rotation="0 0 45" scale="2 .5 3" src="#devicelab-logo">
-				<a-animation attribute="rotation" begin="click" to="0 360 0"></a-animation>
+			<a-box width="4" height="10" depth="2" position="-10 2 -5" rotation="0 0 45" scale="2 .5 3"
+				src="#devicelab-logo" sound="src:#whiplash; on: click">
+					<a-animation attribute="rotation" begin="click" to="0 360 0"></a-animation>
 			</a-box>
 			<a-camera position="0 1.8 0">
 				<a-cursor color="rgb(23, 131, 198)"></a-cursor>
